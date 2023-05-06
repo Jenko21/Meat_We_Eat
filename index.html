@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Meat We Eat</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl7/1L_dstPt3+tZ4lXZ5oEBlb5e/uEwh3w9w3u0qu" crossorigin="anonymous">
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f9fa;
+      }
+
+      header {
+        background-color: #5F8575;
+        padding: 20px;
+        text-align: center;
+      }
+
+      header h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: #f8f9fa;
+      }
+
+      main {
+        padding: 20px;
+      }
+
+      h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        color: #343a40;
+      }
+
+      p {
+        margin-bottom: 10px;
+      }
+
+      .visualizations {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+
+      .visualization {
+        width: 45%;
+        background-color: #ffffff;
+        border: 1px solid #dee2e6;
+        border-radius: 0.25rem;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>The Meat We Eat</h1>
+      <h2>The Analysis of Data about the United States Beef Industry</h2>
+      <h3>Dan Yoo & Samantha Sebastian</h3>
+    </header>
+    <main>
+      <div style="position: relative;">
+        <img src="https://i.pinimg.com/originals/b7/2b/0b/b72b0b88e25ae88765f599d80fa25c4d.jpg" style="display: block; width: 100%; height: auto; filter: brightness(50%);" />
+        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 1.2em;">
+          <b style="color: white;">When you take a bite into a juicy burger from your favorite late-night fast food chain or set your steak ablaze on your cast iron pan, do you ever consider what it took to get that meat on your plate?</b>
+          <p></p>
+          <b style="color: white;"> In this project, we analyzed the social, economic, and environmental factors within the United State’s cattle industry, specifically with wholesale/retail beef, to forecast where the country’s beef industry is heading and what effects it contributes to our lives and the environment. </b>
+          <p></p>
+          <b style="color: white;">Even after you chow down on the beef, there are various effects the beef consumption brings about. By exploring the subsections on this website, you can learn about different aspects of the U.S. beef industry and read our analysis and forecasts on the datasets we analyzed.</b>
+          <p></p>
+          <b style="color: white;">Whether or not the visualizations and interpretations we introduce to you will change your diet, our ultimate goal is to spread awareness of the effects of the meat we eat.</b>
+        </div>
+      </div>
+      <section>
+        <h1> Economic Factors: Beef Industry</h1>
+        <p> In exploring the economic sector of the beef industry, we extracted and graphed data relating to supply and demand, pricing, and production below to analyze their relationship and trends. </p>
+        <div class="visualizations">
+          <div class="visualization">
+            <h3>Beef Consumption</h3>
+            <iframe src="beef_consumption.html" width="100%" height="400" frameBorder="0"></iframe>
+            <p> In comparing beef consumption (in pounds) per capita and beef pricing (wholesale and retail) in the U.S. from 1975 to 2017, beef consumption decreases as beef prices increase over time. We interpret the trend that an increase in pricing results in less consumption since consumers may not be able to afford as much beef as before or may look towards cheaper meat alternatives. </p>
+          </div>
+          <div class="visualizations">
+            <div class="visualization">
+              <h3>Whole Sale</h3>
+              <iframe src="beef_whole_prices.html" width="100%" height="400" frameBorder="0"></iframe>
+            </div>
+            <div class="visualization">
+              <h3>Retail Sale</h3>
+              <iframe src="beef_retail_prices.html" width="100%" height="400" frameBorder="0"></iframe>
+            </div>
+            <div class="visualization">
+              <p> We hypothesize other reasons as to why there has been a decrease in beef consumption over time. An increase in supply of other proteins such as poultry, especially if it is a cheaper alternative, may shift the consumer market to consume beef less frequently. With cultural shifts to be more sustainable and eco-friendly in the United States, some consumers may have had a change in diet (eg. veganism and vegetarianism) which decreases the number of consumers for beef as well as other animal products.  </p>
+            </div>
+            <div class="visualizations">
+                <div class="visualization">
+                <h3>Beef Production</h3>
+                <iframe src="total_beef_production.html" width="100%" height="400" frameBorder="0"></iframe>
+                <p>In analyzing the total beef production in both commercial and local farming, because of how small local farming contributed to the total we decided to graph both types as one data set instead. Overall, the production is steadily increasing overall while experiencing cyclic ups and downs. However, the upward trend showcases that beef demand is growing no matter what, so we interpret that unless the consumer market drastically changes or if commercial farming slows down production, then future beef production will continue to grow.</p>
+                </div>
+            </div>
+            <div class="visualizations">
+              <div class="visualization">
+                <h3>Supply and Disappearance (Demand)</h3>
+                <iframe src="beef_supply_vs_disappearance.html" width="100%" height="400" frameBorder="0"></iframe>
+                <p> To define terms in the graph, total disappearance accounts for the supply of beef that was bought through wholesale or retail and consumed but doesn’t include beef that may have been processed in other products (eg. pet food), and supply includes both commercial and locally farmed cattle as well as imports displayed in value of carcass weight by millions of pounds. The shape of both graphs reflect the market cycle, where the supply peaks during periods of low inflation and  decreases during times of inflation or economic downturn. Supply is proportional to demand, as an increase in demand signifies an increase in supply and vice versa, and a higher supply usually signifies a lower price of product hence why demand increases. However, the difference between supply and disappearance increases as time goes on. We interpret this to be due to the increase in commercialized farming throughout the U.S. as well as the increase of land and resources expended on cattle-raising farms. Also, we believe that the beef not sold or consumed in the U.S. is instead imported to other countries, especially ones that don’t have the beef production to meet the consumer demand. Combining market trends and supply and demand, the next few years may witness a peak then a decrease in both supply and disappearance of beef.</p>
+              </div>
+            </div>
+      </section>
+      <section>
+      <h1> Social: Lifestyles by State</h1>
+      <p> To understand how U.S. consumers view the beef industry and consume beef, we took a look at state data to interpret lifestyles that vary per area.  </p>
+      <div class="visualizations">
+        <div class="visualization">
+          <h3>Exports</h3>
+          <iframe src="state_beef_export.html" width="100%" height="400" frameBorder="0"></iframe>
+          <p> In analyzing the number of beef exports by state, the graph shows that Texas, Kansas, and Nebraska are the top three states to produce and export beef, and most Midwestern and Southern states produce the mid-range amount of beef exports in the U.S.. With this data, we infer that states exporting a higher number of beef may offer a high employment for cattle breeders, butchers, ranchers, livestock transportation managers, and other cattle-related jobs. Furthermore, states with more flatlands and warmer climates are more suited to raise cattle since beef production and exportation are more frequent in those areas. The states colored blue to purple hues are in areas where there are mountain ranges and/or colder climates. So beef exportation occurs more frequently in states that provide suitable conditions for farming which in turn may influence a higher number of residents that specialize in agriculture-suited careers.</p>
+        </div>
+      </div>
+      <div class="visualizations">
+        <div class="visualization">
+          <h3>Wealth</h3>
+          <iframe src="GDP_per_capita.html" width="100%" height="400" frameBorder="0"></iframe>
+          <p></p>
+        </div>
+        <div class="visualization">
+          <h3>Vegan Lifestyle</h3>
+          <iframe src="vegan_restaurant_number.html" width="100%" height="400" frameBorder="0"></iframe>
+          <p></p>
+        </div>
+        <div class="visualization">
+          <div>In comparing the GDP per capita and number of vegan restaurants by state, states with a higher GDP per capita also have a higher number of vegan restaurants. Consumers with a higher household income have more accessibility to specialized diets, as organic, non-meat products are usually more expensive. Also, because the frequency of vegan restaurants is higher in states with bigger populations and more cities, we infer that areas that are more urban and populated require more food options.<p>In particular, states such as California, Texas, and New York showcase a higher range of vegan restaurants compared to the Midwest, as areas with a denser population tend to be more diverse in culture.</p>
+          </div>
+        </div>
+      </div>
+      </section>
+      <section>
+      <h1>Environmental Effects</h1>
+      <p> Even after consumers chow down on the beef, there are various effects the beef consumption brings about that harms the environment and depletes natural resources.  </p>
+      <div class="visualizations">
+        <div class="visualization">
+          <h3>United States VS World (CO2)</h3>
+          <iframe src="USvsWorld_co2.html" width="100%" height="400" frameBorder="0"></iframe>
+          <p>The graph shows that the world average CO2 emissions started to slightly increase in the late 1800s and have been growing at a consistent rate while the U.S. started to greatly increase with certain spikes until it peaked in 2000. In comparing CO2 emissions (Mt) on a global scale and within the U.S., the U.S. in its most recent plotted years produces at least quadruple the amount of emissions as compared to the average of the world.</p>
+          <p>As one of the top developed countries, the U.S. consumes many fossil fuels and contains many urbanized areas, resulting in the increase in CO2 emissions and other greenhouse gasses. However, we think that the peak followed by the decrease in the early 2000s resulted from awareness of environmental impacts and the country’s push to more cleaner, renewable resource usage through legislative action and change in mindset. </p>
+          <p>Furthermore, the push for electrical vehicles and carbon neutrality in the country may show a decrease in emissions for future years. Nevertheless, beef production, because of its impacts on the environment, would also have to be reduced in order for there to be less emissions in the country. </p>
+          <p>The following two graphs showcase greenhouse gas emissions and eutrophication-causing runoff from a number of produced food products. Beef is singularly colored blue while the rest of the entities are orange so that the viewer can easily compare beef to the rest of the products. </p>
+        </div>
+      </div>
+      <div class="visualizations">
+        <div class="visualization">
+          <h3>Green House Gas Emission</h3>
+          <iframe src="ghg_emission.html" width="100%" height="400" frameBorder="0"></iframe>
+          <p> As we observe with this graph, each kilogram of beef produced creates 99kg of emissions, more than double of the emissions from dark chocolate, the second highest greenhouse gas emitting product, which produces 47kg of emissions per kilogram. </P>
+          <P>For context, cattle produce methane through their digestion and waste products, and in farms where beef production is high greenhouse gas emissions build up. In considering the agriculture and animal industry as a whole, beef production contributes to a significant number of the greenhouse gas emissions in the country compared to other entities. So we suggest from this data that if beef production were to decrease then there would be a decrease in greenhouse gas emissions as well, and this can be done through a decrease in consumer demand and consumption or an increase in beef price. </p>
+        </div>
+        <div class="visualization">
+          <h3>Eutroph Emission</h3>
+          <iframe src="eutroph.html" width="100%" height="400" frameBorder="0"></iframe>
+          <p> In this graph, while beef from the dairy herd produces the most eutrophying emissions at 370g of PO4 (phosphate) per kg of beef, cattle from the beef herd is next in line, producing 300g of PO4 per kg of beef. </p>
+          <p>For context, byproducts of animal waste, such as phosphate and nitrate, creates eutrophication through runoff or absorption in the dirt that farmlands produce. By analyzing this data, we conclude that beef production contributes to a significant portion of eutrophication in the U.S., and this disrupts the ecosystem of aquatic as well as terrestrial life with the excess in nutrients. Raising cattle in general, whether it is for dairy or meat, results in buildup of organic material that emits waste that goes into the environment. So a decrease in beef production would result in a decrease in eutrophication.</p>
+        </div>
+      </div>
+      <div class="visualizations">
+        <div class="visualization">
+          <h3>Fresh Water Usage</h3>
+          <iframe src="water_use.html" width="100%" height="400" frameBorder="0"></iframe>
+        </div>
+        <div class="visualization">
+          <h3>Land Usage</h3>
+          <iframe src="land_use.html" width="100%" height="400" frameBorder="0"></iframe>
+        </div>
+        <div class="visualization">
+          <p> In comparing water and land usage for beef production, water usage tends to be lower (1.5kL of water per kg) but land use is the second highest out of all the entities (320m^2 per kg). While water usage is low, in considering the amount of cattle the U.S. produces there is still a significant amount of water loss from beef production. Furthermore, because cattle farming heavily relies on land use, we think that there is a loss of land for U.S. citizens as much of it is owned by the beef industry. </p>
+          <p>Also, the use in land results in overgrazing and buildup of waste, which results in the greenhouse gas emissions and byproducts that causes eutrophication explained in the previous graphs. Because beef is mostly produced in rural areas with land suitable for grazing, we infer that this results in an increase in emissions from transportation as beef products would travel long distances to reach consumers. </p>
+          <p>Overall, while the water usage is less, because of how high the land usage is, beef production uses up more resources than the other food entities. To possibly decrease the resource-usage, consumers could consider eating other alternatives that use less resources, and on the economic side beef prices would be raised to decrease demand. Also, legislative action could be taken against beef-selling companies, whether that is through excise taxes to incentivise consumers to buy less meat or environmental fines that require payment per emissions and runoffs that goes beyond a certain number. Overall, to decrease resource consumption in the beef industry, companies must be required to change their tactics as well as be more environmentally friendly.</p>
+        </div>
+      </div>
+      </section>
+      <section>
+      <h2>Data Sources</h2>
+      <div class="visualizations">
+        <div class="visualization">
+            <p>The data sources we used were either in .csv or .xlsx, so in Python we imported pandas as pd and csv to properly extract and read the data. Under the file names, the link to the data source is provided. Also, the visuals are listed and extra notes if the data was edited are included. </p>
+            <ul>
+                <li>
+                    <strong>US per capita consumption of BBP and their whole and retail price.xlsx</strong><br>
+                    <a href="https://data.world/sangwan26/us-per-capita-consumption-prices-of-beef-broiler-pork">Link</a><br>
+                    Visuals: Beef Consumptions in the U.S. 1975-2017, Beef Whole Prices in the U.S. 1975-2017, Beef Retail Prices in the U.S. 1975-2017
+                </li>
+                <li>
+                    <strong>WASDE Beef.xlsx</strong><br>
+                    <a href="https://www.ers.usda.gov/data-products/livestock-and-meat-domestic-data/">Link</a><br>
+                    Visuals: Total Beef Production in the U.S. 1970-2022, Total Supply vs. Total Disappearance of Beef in the U.S.<br>
+                    <em>Note: sheet was created from MeatStatsFull.xlsx, and data was personalized for easier graphing</em>
+                </li>
+                <li>
+                    <strong>stimulated_agriculture.csv</strong><br>
+                    <a href="https://www.kaggle.com/datasets/perkymaster/stimulated-agriculture-us?resource=download">Link</a><br>
+                    Visuals: State Beef Export
+                </li>
+                <li>
+                    <strong>Datafiniti_Vegetarian_and_Vegan_Restaurants.csv</strong><br>
+                    <a href="https://data.world/datafiniti/vegetarian-vegan-restaurants">Link</a><br>
+                    Visuals: Number of Vegan Restaurants by State
+                </li>
+                <li>
+                    <strong>SARPP_STATE_2008_2021.csv</strong><br>
+                    <a href="https://www.bea.gov/data/gdp/gdp-state">Link</a><br>
+                    Visual: GDP per Capita by State<br>
+                    <em>Note: file was written as state.csv in the Python code using the file’s data</em>
+                </li>
+                <li>
+                    <strong>owid_co2_data.csv</strong><br>
+                    <a href="https://github.com/owid/co2-data/blob/master/owid-co2-codebook.csv">Link</a><br>
+                    Visuals: United States CO2 Emissions vs. World Average
+                </li>
+                <li>
+                    <strong>Poore and Nemecek Data (2010).xlsx</strong><br>
+                    <a href="https://ourworldindata.org/environmental-impacts-of-food">Link</a><br>
+                    Visuals: Greenhouse Gas Emissions (kg of CO2) per kg of Produced Food (2010), Land use (m^2) per kg of Produced Food (2010), Freshwater Withdrawals (L) per kg of Produced Food (2010), Eutrophying emissions (g of PO4) per kg of Produced Food (2010)
+                </li>
+                <li>
+                    <strong>Image Source (Cow)</strong><br>
+                    <a href="https://wallpapers.com/wallpapers/cow-with-tiny-horns-cyfb1dy6esbh0q3u.html">Link</a>
+                </li>
+            </ul>
+      </div>
+      </section>
+    </main>
+</html>
